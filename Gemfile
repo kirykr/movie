@@ -8,10 +8,6 @@ group :development, :test do
 	gem 'sqlite3'
 end
 
-group :production do
-	gem 'pg', '~> 0.19.0'
-	gem 'rails_12factor', '~> 0.0.3'
-end
 # Use SCSS for stylesheets
 gem 'sass-rails'
 
@@ -56,4 +52,8 @@ end
 
 group :test do
   gem "capybara"
+end
+
+group :production do
+  gem 'pg'
 end
